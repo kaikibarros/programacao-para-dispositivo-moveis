@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bem-vindo ao Jogo da Forca!</Text>
-      <Link href="/jogo-da-forca" asChild>
+      <Link href="./jogo-da-forca" asChild>
         <TouchableOpacity style={styles.btn}>
           <Text style={styles.btnText}>Jogar Agora</Text>
         </TouchableOpacity>
