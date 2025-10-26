@@ -39,6 +39,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "915bb47a-18c8-48c8-9f76-69b2a8f1c818"
+      }
+    },
+    "owner": "kaiki"
   }
 }

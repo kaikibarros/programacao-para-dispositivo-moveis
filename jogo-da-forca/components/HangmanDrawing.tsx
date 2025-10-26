@@ -32,7 +32,7 @@ export default function HangmanDrawing({
         {/* Rope */}
         <Rect x={100} y={8} width={2} height={30} fill="#d1d5db" />
 
-        {/* Head (circle) */ }
+        {/* Cabecinha) */}
         {errors > 0 && (
           <Circle
             cx={118}
@@ -44,7 +44,7 @@ export default function HangmanDrawing({
           />
         )}
 
-        {/* Body */}
+        {/* corpinho */}
         {errors > 1 && (
           <Line
             x1={118}
@@ -57,7 +57,7 @@ export default function HangmanDrawing({
           />
         )}
 
-        {/* Left Arm */}
+        {/* Bracinho esquerdo */}
         {errors > 2 && (
           <Line
             x1={118}
@@ -70,7 +70,7 @@ export default function HangmanDrawing({
           />
         )}
 
-        {/* Right Arm */}
+        {/* Bracinho direito */}
         {errors > 3 && (
           <Line
             x1={118}
@@ -83,7 +83,7 @@ export default function HangmanDrawing({
           />
         )}
 
-        {/* Left Leg */}
+        {/* Perninha esquerda */}
         {errors > 4 && (
           <Line
             x1={118}
@@ -96,7 +96,7 @@ export default function HangmanDrawing({
           />
         )}
 
-        {/* Right Leg */}
+        {/* Perninha direita */}
         {errors > 5 && (
           <Line
             x1={118}

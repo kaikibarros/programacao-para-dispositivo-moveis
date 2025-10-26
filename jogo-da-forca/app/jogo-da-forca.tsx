@@ -125,12 +125,7 @@ export default function JogoDaForca() {
             </TouchableOpacity>
           </View> */}
 
-          <GameControls
-            gameOver={gameOver}
-            won={won}
-            word={word}
-            onRestart={startNewGame}
-          />
+         
         </View>
       </View>
 
@@ -142,18 +137,25 @@ export default function JogoDaForca() {
           disabled={gameOver}
         />
       </ScrollView>
+       <GameControls
+            gameOver={gameOver}
+            won={won}
+            word={word}
+            onRestart={startNewGame}
+          />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#0f1724", padding: 12 },
+  container: { flex: 1, backgroundColor: "#1B3C53", padding: 20 },
   title: {
-    fontSize: 28,
+    marginTop: 20,
+    fontSize: 35,
     fontWeight: "700",
-    color: "#fff",
+    color: "#FFEAD8",
     textAlign: "center",
-    marginBottom: 8,
+    marginBottom: 7,
   },
   gameRow: { flexDirection: "row", gap: 12 },
   infoPanel: { flex: 1, padding: 8 },
@@ -170,19 +172,21 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   btn: {
+    
     backgroundColor: "#1e293b",
     paddingHorizontal: 14,
     paddingVertical: 10,
     borderRadius: 8,
   },
   btnText: { color: "#fff", fontWeight: "700" },
-  keyboardScroll: { marginTop: 12 },
+  keyboardScroll: { marginTop: 20 },
   attemptsContainer: { marginVertical: 12, alignItems: "center" },
   attemptsTitle: {
-    color: "#fff",
+    color: "#FDEB9E",
     fontSize: 16,
     marginBottom: 4,
     fontWeight: "600",
+    
   },
   lettersRow: {
     flexDirection: "row",

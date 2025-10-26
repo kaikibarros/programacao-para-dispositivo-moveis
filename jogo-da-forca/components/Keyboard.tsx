@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
 interface Props {
   guessed: string[];
@@ -8,7 +8,7 @@ interface Props {
   disabled: boolean;
 }
 
-const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 export default function Keyboard({ guessed, wrong, onPress, disabled }: Props) {
   return (
@@ -30,25 +30,24 @@ export default function Keyboard({ guessed, wrong, onPress, disabled }: Props) {
   );
 }
 
-
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 4,
-    justifyContent: 'center',
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 2,
+    justifyContent: "center",
   },
   key: {
-    width: 36,
-    height: 36,
-    backgroundColor: '#1e293b',
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: 44,
+    height: 44,
+    backgroundColor: "#1e293b",
+    alignItems: "center",
+    justifyContent: "center",
     borderRadius: 6,
     margin: 2,
   },
   keyUsed: {
-    backgroundColor: '#475569',
+    backgroundColor: "#687b96ff",
   },
-  keyText: { color: '#fff', fontWeight: '600' },
+  keyText: { color: "#fff", fontWeight: "600" },
 });

@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
 interface Props {
   word: string;
@@ -10,9 +10,9 @@ interface Props {
 export default function WordDisplay({ word, guessed, reveal }: Props) {
   return (
     <View style={styles.wordRow}>
-      {word.split('').map((letter, i) => (
+      {word.split("").map((letter, i) => (
         <Text key={i} style={styles.letter}>
-          {guessed.includes(letter) || reveal ? letter : '_'}
+          {guessed.includes(letter) || reveal ? letter : "_"}
         </Text>
       ))}
     </View>
@@ -20,11 +20,11 @@ export default function WordDisplay({ word, guessed, reveal }: Props) {
 }
 
 const styles = StyleSheet.create({
-  wordRow: { flexDirection: 'row', flexWrap: 'wrap', marginTop: 10 },
+  wordRow: { flexDirection: "row", flexWrap: "wrap", marginTop: 10 },
   letter: {
     fontSize: 28,
-    color: '#fff',
+    color: "#fff",
     marginHorizontal: 4,
-    fontWeight: '700',
+    fontWeight: "700",
   },
 });
