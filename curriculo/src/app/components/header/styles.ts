@@ -31,3 +31,5 @@ export const s = StyleSheet.create({
     },
 
 });
+
+export default s;

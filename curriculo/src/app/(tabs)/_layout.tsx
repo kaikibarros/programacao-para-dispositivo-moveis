@@ -1,6 +1,8 @@
 import { Tabs } from "expo-router";
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { View, Text,  TouchableOpacity } from 'react-native';
+import { Footer } from "../components/footer";
+import { s } from '../components/footer/styles';
 
 
 import { colors } from '../../styles/colors';
@@ -11,7 +13,6 @@ import { Header } from "../components/header";
 
 export default function TabsLayout () {
     return(
-    
       // gerencia gesto
     <GestureHandlerRootView style={{flex: 1}}>
       
@@ -62,7 +63,9 @@ export default function TabsLayout () {
 
           
         </Drawer>
-
+        
         </GestureHandlerRootView>
+
+      
     )
 } 
