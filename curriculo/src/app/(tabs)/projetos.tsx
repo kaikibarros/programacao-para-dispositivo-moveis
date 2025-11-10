@@ -7,7 +7,7 @@ export default function ProjetoScreen() {
     return(
         // conteúdo do perfil
         <View><Text>Projetos</Text>
-        
+        <Text>Aqui os meus repositórios do GitHub irão aparecer</Text>
         <View style={s.footer}>
                     <Footer>
                         <Text>© 2024 Kaiki Barros. Todos os direitos reservados.</Text>
@@ -16,7 +16,6 @@ export default function ProjetoScreen() {
         
         </View>
     ) 
-
 }
 
 // estilos do projetos
