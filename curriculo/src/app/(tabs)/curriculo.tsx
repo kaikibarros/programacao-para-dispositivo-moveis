@@ -6,45 +6,29 @@ const { Ionicons } = require('@expo/vector-icons');
 const PDF_DOWNLOAD_URL = ''
 const EMAIL_URL = 'mailto:kaikibarros2004@gmail.com'; 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/kaikibarros'; 
-
-import BotaoDownload from "../components/botaoCurriculo";
+ import BotaoDownload from "../components/botaoCurriculo";
 
 
 export default function ContatoScreen() {
 
-  const urlDoArquivo = '';
-  const nomeDoArquivo = '../assets/curriculo.pdf';
-
-  // Função para abrir um link
-//   const handleOpenURL = (url) => {
-//     Linking.openURL(url).catch(err => console.error("Não foi possível abrir o link: ", err));
-//   };
+  const urlDoArquivo = 'https://raw.githubusercontent.com/kaikibarros/programacao-para-dispositivo-moveis/28617de564c2f58442cce628c98dd7d42acb9fb1/curriculo/src/assets/curriculo.pdf';
 
   return(
     <SafeAreaView style={styles.safeArea}>
-      
-
       <View style={styles.container}>
         {/* ScrollView permite que o conteúdo role, se necessário */}
         <ScrollView contentContainerStyle={styles.scrollContainer}>
           
-          {/* --- Seção Download CV --- */}
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Meu Currículo</Text>
             <Text style={styles.paragraph}>
               Se preferir, pode baixar a versão completa do meu currículo em formato PDF para guardar ou partilhar.
             </Text>
             <BotaoDownload 
-              url={PDF_DOWNLOAD_URL} 
-              nomeArquivo={'curriculo.pdf'} 
-              titulo="Baixar Currículo (PDF)"
+              url={urlDoArquivo}
             />
             
-            {/* Botão de Download */}
-            {/* <TouchableOpacity style={styles.button} onPress={() => handleOpenURL(PDF_DOWNLOAD_URL)}> */}
-              <Ionicons name="download-outline" size={22} color="#0f172a" />
-              <Text style={styles.buttonText}>Baixar Currículo (PDF)</Text>
-            {/* </TouchableOpacity> */}
+            
           </View>
 
           {/* --- Seção Entre em Contato --- */}
@@ -55,10 +39,10 @@ export default function ContatoScreen() {
             </Text>
 
             {/* Botão de Email */}
-            {/* <TouchableOpacity style={styles.contactItem} onPress={() => handleOpenURL(EMAIL_URL)}> */}
+           
               <Ionicons name="mail-outline" size={24} color="#38bdf8" />
-              <Text style={styles.contactText}>kaiki.barros@example.com</Text>
-            {/* </TouchableOpacity> */}
+              <Text style={styles.contactText}>kaikibarros2004@gmail.com</Text>
+           
 
             {/* Botão de LinkedIn */}
             {/* <TouchableOpacity style={styles.contactItem} onPress={() => handleOpenURL(LINKEDIN_URL)}> */}
@@ -139,7 +123,11 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   contactText: {
-    fontSize: 18,
+    fontSize: 18, 
+    position: 'flex-right',
+    alignItems: 'center',
+    fontWeight: 'bold',
+    justifyContent: 'center',
     color: '#cbd5e1',
     marginLeft: 15,
   },

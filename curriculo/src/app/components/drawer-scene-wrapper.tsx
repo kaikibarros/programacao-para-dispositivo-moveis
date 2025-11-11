@@ -29,3 +29,5 @@ export function DrawerSceneWrapper({ children }: { children: React.ReactNode }) 
         </Animated.View>
     )
 }
+
+export default DrawerSceneWrapper;

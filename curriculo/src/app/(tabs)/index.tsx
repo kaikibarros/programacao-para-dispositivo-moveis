@@ -4,7 +4,7 @@ import { DrawerSceneWrapper } from '../components/drawer-scene-wrapper';
 import { Ionicons } from '@expo/vector-icons';
 
 const PROFILE_IMAGE_URL = 'https://placehold.co/150x150/1E3A8A/FFF?text=KB';
-const LINKEDIN_URL = 'https://www.linkedin.com/in/kaikibarros'; 
+const LINKEDIN_URL = 'https://www.linkedin.com/in/kaiki-barros-706722260'; 
 const GITHUB_URL = 'https://github.com/kaikibarros'; 
 
 export default function HomeScreen() {
@@ -52,7 +52,7 @@ export default function HomeScreen() {
             <Text style={styles.sectionTitle}>FIND ME ON</Text>
             <View style={styles.socialsContainer}>
               <TouchableOpacity onPress={() => Linking.openURL(LINKEDIN_URL)}>
-                <Ionicons name="logo-linkedin" size={40} color="#0A66C2" />
+                <Ionicons name="logo-linkedin" size={40} color="#6b433cff" />
               </TouchableOpacity>
               <TouchableOpacity onPress={() => Linking.openURL(GITHUB_URL)}>
                 <Ionicons name="logo-github" size={40} color="#e2e8f0" />

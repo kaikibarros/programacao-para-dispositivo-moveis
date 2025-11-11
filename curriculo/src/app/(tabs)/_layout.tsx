@@ -25,6 +25,8 @@ export default function RootLayout() {
             paddingTop: 22,
             backgroundColor: '#0f172a', //cor do menu lateral
             width: "20%",
+            
+
           },
 
           drawerLabelStyle: {
@@ -35,6 +37,7 @@ export default function RootLayout() {
            backgroundColor: '#0f172a',
 
          },
+         
         
           headerLeft: () => (
             <View style={{ flexDirection: 'row', alignItems: 'center', marginRight: 15 }}>
@@ -54,7 +57,8 @@ export default function RootLayout() {
       >
         
         <Drawer.Screen
-          name="home" // app/home.js
+
+          name="index" // app/home.js
           options={{
             title: '',
             drawerIcon: ({ color, size }) => (

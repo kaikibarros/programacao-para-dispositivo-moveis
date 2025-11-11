@@ -33,10 +33,10 @@ export default function ProjetoScreen() {
             </View>
 
             {/* --- Botão para o GitHub --- */}
-            {/* <TouchableOpacity style={styles.githubButton} onPress={() => handleOpenURL(GITHUB_PROFILE_URL)}>
+            <TouchableOpacity style={styles.githubButton} onPress={() => Linking.openURL(GITHUB_PROFILE_URL)}>
               <Ionicons name="logo-github" size={22} color="#e2e8f0" />
               <Text style={styles.buttonText}>Ver todos no GitHub</Text>
-            </TouchableOpacity> */}
+            </TouchableOpacity>
           </View>
 
         </ScrollView>
