@@ -1,15 +1,19 @@
 const React = require('react');
-const { View, Text, StyleSheet, SafeAreaView, ScrollView, TouchableOpacity, Linking } = require('react-native');
-// Adicionamos os ícones que vamos usar
+const { View, Text, StyleSheet, SafeAreaView, ScrollView, Linking } = require('react-native');
+
 const { Ionicons } = require('@expo/vector-icons'); 
 
-// --- ATENÇÃO: Links de Exemplo ---
-// Troque estes links pelos seus links reais!
-const PDF_DOWNLOAD_URL = 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'; // Link de exemplo
-const EMAIL_URL = 'mailto:kaiki.barros@example.com'; // Seu email
-const LINKEDIN_URL = 'https://www.linkedin.com/in/kaikibarros'; // Seu LinkedIn
+const PDF_DOWNLOAD_URL = ''
+const EMAIL_URL = 'mailto:kaikibarros2004@gmail.com'; 
+const LINKEDIN_URL = 'https://www.linkedin.com/in/kaikibarros'; 
+
+import BotaoDownload from "../components/botaoCurriculo";
+
 
 export default function ContatoScreen() {
+
+  const urlDoArquivo = '';
+  const nomeDoArquivo = '../assets/curriculo.pdf';
 
   // Função para abrir um link
 //   const handleOpenURL = (url) => {
@@ -18,6 +22,8 @@ export default function ContatoScreen() {
 
   return(
     <SafeAreaView style={styles.safeArea}>
+      
+
       <View style={styles.container}>
         {/* ScrollView permite que o conteúdo role, se necessário */}
         <ScrollView contentContainerStyle={styles.scrollContainer}>
@@ -28,6 +34,11 @@ export default function ContatoScreen() {
             <Text style={styles.paragraph}>
               Se preferir, pode baixar a versão completa do meu currículo em formato PDF para guardar ou partilhar.
             </Text>
+            <BotaoDownload 
+              url={PDF_DOWNLOAD_URL} 
+              nomeArquivo={'curriculo.pdf'} 
+              titulo="Baixar Currículo (PDF)"
+            />
             
             {/* Botão de Download */}
             {/* <TouchableOpacity style={styles.button} onPress={() => handleOpenURL(PDF_DOWNLOAD_URL)}> */}
@@ -68,8 +79,6 @@ export default function ContatoScreen() {
   ) 
 }
 
-// --- Estilos da Página Contato ---
-// Usamos o mesmo StyleSheet das outras páginas para manter a consistência
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,

@@ -63,7 +63,7 @@ export default function SobreScreen() {
 
       
           <View style={styles.footerContainer}>
-            <Text style={styles.footerText}>© 2024 Kaiki Barros. Todos os direitos reservados.</Text>
+            <Text style={styles.footerText}>© 2025 Kaiki Barros. Todos os direitos reservados.</Text>
           </View>
 
         </View>

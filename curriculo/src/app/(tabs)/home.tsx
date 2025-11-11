@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, SafeAreaView, ScrollView, TouchableOpacity, Linking } from 'react-native';
-
+import { DrawerSceneWrapper } from '../components/drawer-scene-wrapper';
 import { Ionicons } from '@expo/vector-icons';
 
 const PROFILE_IMAGE_URL = 'https://placehold.co/150x150/1E3A8A/FFF?text=KB';
@@ -11,6 +11,8 @@ export default function HomeScreen() {
   return (
     // SafeAreaView garante que o conteúdo não fique debaixo da status bar ou do notch
     <SafeAreaView style={styles.safeArea}>
+     
+
       <View style={styles.container}>
         <ScrollView contentContainerStyle={styles.scrollContainer}>
           
@@ -19,7 +21,7 @@ export default function HomeScreen() {
             <Image
                 source={require('@/assets/image/kaiki.png')}
                 style={styles.profileImage}
-              />
+                />
             
             <Text style={styles.title}>Olá!! 👋</Text>
             <Text style={styles.subtitle}>Meu nome é Kaiki Barros</Text>
@@ -61,11 +63,13 @@ export default function HomeScreen() {
         </ScrollView>
 
         <View style={styles.footerContainer}>
-          <Text style={styles.footerText}>© 2024 Kaiki Barros. Todos os direitos reservados.</Text>
+          <Text style={styles.footerText}>© 2025 Kaiki Barros. Todos os direitos reservados.</Text>
         </View>
 
       </View>
-    </SafeAreaView>
+
+     </SafeAreaView>
+
   );
 }
 
