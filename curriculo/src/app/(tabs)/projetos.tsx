@@ -1,18 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, ScrollView, TouchableOpacity, Linking } from 'react-native';
-// Adicionamos os ícones que vamos usar
 import { Ionicons } from '@expo/vector-icons'; 
 
-// --- ATENÇÃO: Link de Exemplo ---
-// Troque este link pelo seu perfil real do GitHub!
 const GITHUB_PROFILE_URL = 'https://github.com/kaikibarros';
 
 export default function ProjetoScreen() {
-
-  // Função para abrir um link
-//   const handleOpenURL = (url) => {
-//     Linking.openURL(url).catch(err => console.error("Não foi possível abrir o link: ", err));
-//   };
 
   return(
     <SafeAreaView style={styles.safeArea}>
@@ -42,7 +34,6 @@ export default function ProjetoScreen() {
         </ScrollView>
 
         {/* --- Footer --- */}
-        {/* Recriamos o rodapé com estilos locais para evitar erros de importação */}
         <View style={styles.footerContainer}>
           <Text style={styles.footerText}>© 2025 Kaiki Barros. Todos os direitos reservados.</Text>
         </View>
@@ -53,7 +44,7 @@ export default function ProjetoScreen() {
 }
 
 // --- Estilos da Página Projetos ---
-// Usamos o mesmo StyleSheet das outras páginas para manter a consistência
+
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
@@ -83,7 +74,7 @@ const styles = StyleSheet.create({
   },
   paragraph: {
     fontSize: 16,
-    color: '#cbd5e1', // Cinza
+    color: '#cbd5e1',
     lineHeight: 24, // Espaçamento entre linhas
     marginBottom: 20,
     textAlign: 'center',

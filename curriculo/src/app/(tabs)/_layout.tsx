@@ -24,13 +24,13 @@ export default function RootLayout() {
           drawerStyle: {
             paddingTop: 22,
             backgroundColor: '#0f172a', //cor do menu lateral
-            width: "20%",
+            width: "25%",
             
 
           },
 
           drawerLabelStyle: {
-            marginLeft: -20,
+            marginLeft: -10,
 
           },
          sceneStyle: {
